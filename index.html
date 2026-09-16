@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thread Studio OS</title>
+    <style>
+      :root {
+        --bg: #0a0f1f;
+        --panel: #121b2d;
+        --accent: #7dd3fc;
+        --accent-2: #c084fc;
+        --text: #e5eefb;
+        --muted: #9db1c9;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #111827);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 72px 24px 80px;
+      }
+
+      .card {
+        background: rgba(18, 27, 45, 0.94);
+        border: 1px solid rgba(125, 211, 252, 0.2);
+        border-radius: 18px;
+        padding: 36px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 18px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(125, 211, 252, 0.12);
+        border: 1px solid rgba(125, 211, 252, 0.2);
+        color: var(--text);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="eyebrow">Thread Studio OS</div>
+        <h1>Build smarter production operations.</h1>
+        <p>
+          Thread Studio OS is an enterprise platform for custom garment production,
+          client orders, catalog assets, and factory operations.
+        </p>
+        <p>
+          This site is being served from GitHub Pages using a workflow deployment.
+        </p>
+
+        <div class="badge-row">
+          <span class="badge">Orders</span>
+          <span class="badge">Catalogs</span>
+          <span class="badge">Operations</span>
+          <span class="badge">Production</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
